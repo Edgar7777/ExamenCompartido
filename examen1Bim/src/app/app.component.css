@@ -1,0 +1,78 @@
+/* .sa-fondo-pelicula-banner{
+  background-color: #000;
+}
+.sa-color-letras-pelicula-banner{
+  color: #fff;
+}
+.sa-fondo-estado{
+  background-color: #faabb0;
+} */
+.sa-fondo-pelicula-banner {
+  background-color: #000;
+  border-style: solid;
+  border-color: #000;
+  border-width: 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(34%);
+  width: 600px;
+  height: 400px;
+}
+
+.sa-fondo-pelicula-banner-2 {
+  background-color: #fff;
+  border-style: solid;
+  border-color: #000;
+  border-width: 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(34%);
+  width: 300px;
+  height: 400px;
+}
+
+.sa-fondo-pelicula-banner-3 {
+  background-color: #000;
+  border-style: solid;
+  border-color: #000;
+  border-width: 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(34%);
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  border: 0px solid #000000;
+  width: 120px;
+  height: 180px;
+}
+
+.sa-color-letras-pelicula-banner {
+  color: #000;
+}
+
+.sa-fondo-estado {
+  max-width: 120px;
+  text-align: center;
+}
+
+.sa-color-estado-amarillo {
+  background-color: #fabb00;
+}
+
+.sa-color-estado-rosado {
+  background-color: #e3003e;
+}
+
+.sa-espaciado {
+  height: 250px;
+}
