@@ -7,10 +7,22 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 //import {MenuItem} from 'primeng/api';                 //api
 
 import { AppComponent } from './app.component';
+import { Input1Component } from './input1/input1.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BotonesComponent } from './botones/botones.component';
+import { Input2Component } from './input2/input2.component';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { TablaComponent } from './tabla/tabla.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Input1Component,
+    CarouselComponent,
+    BotonesComponent,
+    Input2Component,
+    TarjetaComponent,
+    TablaComponent
   ],
   imports: [
     NgbModule.forRoot(),
