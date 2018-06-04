@@ -25,12 +25,11 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
+    "jQuery": "^1.7.4",
     "node-modules": "^1.0.1",
-    "primeng": "^5.2.7",
-    "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
     "primeng": "^5.2.0",
-    "font-awesome": "^4.7.0"
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",
