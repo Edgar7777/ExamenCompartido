@@ -1,3 +1,10 @@
-<p>
-  botones works!
-</p>
+<h3>Button Component</h3>
+<p-button (onClick)="count()" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" iconPos="right" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-close"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" [disabled]="true" label="Disabled"></p-button>

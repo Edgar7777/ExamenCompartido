@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {Entrenador} from '../models/entrenador';
 
 @Component({
   selector: 'app-input1',
@@ -8,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class Input1Component implements OnInit {
 
   constructor() { }
-
+@Output() entrenadorCreado: EventEmitter<Entrenador> = new EventEmitter<Entrenador>();
   ngOnInit() {
+  }
+
+  crearEntrenador() {
+    const entrenador: Entrenador = new Entrenador();
+    entrenador.nombres = ' ';
+    entrenador.apellidos = ' ';
+    entrenador.fechaNacimiento = ' ';
+    entrenador.numeroMedallas = ' ';
+    entrenador.campeonActual = ' ';
+    console.log('[Nuevo Entrenador]: ', entrenador);
+    this.entrenadorCreado.emit(entrenador);
   }
 
 }
