@@ -4,28 +4,28 @@
     </p-header>
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Nombre" value="">
+    <input matInput placeholder="Nombre" value="" #nombreEnt>
   </mat-form-field>
 <br />
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Apellido" value="">
+    <input matInput placeholder="Apellido" value="" #apellidoEnt>
   </mat-form-field>
 <br />
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="fechaNacimiento" value="">
+    <input matInput placeholder="fechaNacimiento" value="" #fechaNacimientoEnt>
   </mat-form-field>
 <br />
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="numeroMedallas" value="">
+    <input matInput placeholder="numeroMedallas" value="" #numeroMedallasEnt>
   </mat-form-field>
 <br />
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="campeonActua" value="">
+    <input matInput placeholder="campeonActua" value="" #campeonActuaEnt>
   </mat-form-field>
 <br />
 <button mat-button>Limpiar</button>
-<button mat-button>Guardar</button>
+<button mat-button (click)="aplicarClase(nombreEnt.value,apellidoEnt.value,fechaNacimientoEnt.value,numeroMedallasEnt.value,campeonActuaEnt.value)">Guardar</button>
