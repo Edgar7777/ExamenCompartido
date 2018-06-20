@@ -1,31 +1,39 @@
 <p-card title="INFO" [style]="{width: '360px'}" styleClass="ui-card-shadow">
-    <p-header>
-        <img src="Card" src="https://cdn-az.allevents.in/banners/2eeb14032b1e938973c980bd078bd965-rimg-w711-h265-gmir.jpg">
-    </p-header>
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Nombre" value="" #nombreEnt>
-  </mat-form-field>
-<br />
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Apellido" value="" #apellidoEnt>
-  </mat-form-field>
-<br />
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="fechaNacimiento" value="" #fechaNacimientoEnt>
-  </mat-form-field>
-<br />
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="numeroMedallas" value="" #numeroMedallasEnt>
-  </mat-form-field>
-<br />
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="campeonActua" value="" #campeonActuaEnt>
-  </mat-form-field>
-<br />
-<button mat-button>Limpiar</button>
-<button mat-button (click)="aplicarClase(nombreEnt.value,apellidoEnt.value,fechaNacimientoEnt.value,numeroMedallasEnt.value,campeonActuaEnt.value)">Guardar</button>
+  <p-header>
+    <img src="Card" src="https://cdn-az.allevents.in/banners/2eeb14032b1e938973c980bd078bd965-rimg-w711-h265-gmir.jpg">
+  </p-header>
+  <div>
+    <!-- <form class="example-form"> //esto hace que se actualice el formulario al presionar un boton-->
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre" #nombreEnt>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Apellido" #apellidoEnt>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="fechaNacimiento" #fechaNacimientoEnt>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="numeroMedallas" #numeroMedallasEnt>
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="campeonActua" #campeonActuaEnt>
+    </mat-form-field>
+    <br />
+
+  </div>
+  <div>
+    <button mat-button>Limpiar</button>
+
+    <button mat-button (click)="aplicarClase(nombreEnt.value,
+  apellidoEnt.value,fechaNacimientoEnt.value,numeroMedallasEnt.value,campeonActuaEnt.value)">Guardar</button>
+  </div>
+</p-card>

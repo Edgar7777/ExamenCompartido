@@ -1,37 +1,43 @@
 <p-card align="center" title="INFO DEL POKÉMON" [style]="{width: '360px'}" styleClass="ui-card-shadow">
-    <p-header>
-        <img src="Card" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png">
-    </p-header>
-<div class="sa-pokedext">
+  <p-header>
+    <img src="Card" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png">
+  </p-header>
+  <div class="sa-pokedext">
 
-
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">Numero de Pokemon</label>
+    <span class="ui-float-label">
+    <input id="numeroPok" type="text" size="30" #numeroPok pInputText>
+    <label for="numeroPok">Numero de Pokemon</label>
 </span>
-<br />
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">Poder Especial Uno</label>
+    <br />
+    <span class="ui-float-label">
+    <input id="nombrePok" type="text" size="30" #nombrePok pInputText>
+    <label for="nombrePok">Nombre del Pokemon</label>
 </span>
-<br />
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">Poder Especial dos</label>
+    <br />
+    <span class="ui-float-label">
+    <input id="poderEspecialUnoPok" type="text" size="30" #poderEspecialUnoPok pInputText>
+    <label for="poderEspecialUnoPok">Poder Especial Uno</label>
 </span>
-<br />
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">Fecha Captura</label>
+    <br />
+    <span class="ui-float-label">
+    <input id="poderEspecialDosPok" type="text" size="30" #poderEspecialDosPok pInputText>
+    <label for="poderEspecialDosPok">Poder Especial dos</label>
 </span>
-<br />
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">Nivel</label>
+    <br />
+    <span class="ui-float-label">
+    <input id="fechaCapturaPok" type="text" size="30" #fechaCapturaPok pInputText>
+    <label for="fechaCapturaPok">Fecha Captura</label>
 </span>
-<br />
-<span class="ui-float-label">
-    <input id="float-input" type="text" size="30" pInputText>
-    <label for="float-input">id Entrenador</label>
+    <br />
+    <span class="ui-float-label">
+    <input id="nivelPok" type="text" size="30" #nivelPok pInputText>
+    <label for="nivelPok">Nivel</label>
 </span>
-</div>
+    <br />
+    <span class="ui-float-label">
+    <input id="idEntrenadorPok" type="text" size="30" #idEntrenadorPok pInputText>
+    <label for="idEntrenadorPok">id Entrenador</label>
+</span>
+      <button pButton label="Guardar" (click)="leerDatos(numeroPok.value,nombrePok.value,poderEspecialUnoPok.value,poderEspecialDosPok.value,fechaCapturaPok.value,nivelPok.value,idEntrenadorPok.value)"></button>
+      <button pButton label="Limpiar" class="ui-button-secondary"></button>
+  </div>

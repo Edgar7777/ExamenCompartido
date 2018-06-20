@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <app-carousel></app-carousel>
+      <app-carousel [listaEntrenadores]="arregloEntrenador"></app-carousel>
     </div>
     <div class="col-lg-6">
-      <app-input1></app-input1>
+      <app-input1 (entrenadorCreado)="guardarentrenador($event)"></app-input1>
     </div>
   </div>
 </div>
@@ -13,36 +13,9 @@
 
 <div style="text-align:center" class="container">
   <div class="row">
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-  </div>
-</div>
-
-<br />
-
-<div style="text-align:center" class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
-    </div>
-    <div class="col-sm-3">
-      <img width="250" [src]="img1" />
+    <div class="col-sm-11">
+      <app-botones [listaEntrenadores]="arregloEntrenador"
+      (entrenadorCreado)="formatearEntrenadorCreado($event)"></app-botones>
     </div>
   </div>
 </div>
@@ -52,12 +25,18 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <app-input2></app-input2>
+      <app-input2 *ngIf="entrenadorCreado"
+                  [entrenador]="entrenadorCreado"
+                  (pokemonInsertado)="formatearPokemon($event)">
+></app-input2>
     </div>
     <div class="col-lg-6">
-      <app-tarjeta></app-tarjeta>
+      <app-tarjeta *ngIf="entrenadorCreado"
+                  [entrenador]="entrenadorCreado"
+                  (pokeInsertado)="formatearPokemon($event)"></app-tarjeta>
     </div>
   </div>
 </div>
 <br />
-<app-tabla></app-tabla>
+<app-tabla *ngIf="entrenadorCreado&&entrenadorCreado.pokemons"
+               [pokemons]="entrenadorCreado.pokemons"></app-tabla>

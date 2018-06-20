@@ -1,12 +1,14 @@
-<p-card title="INFO" subtitle="ENTRENADOR" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+<p-card title="INFO" [style]="{width: '360px'}" styleClass="ui-card-shadow">
     <p-header>
         <img src="Card" src="https://cdn-az.allevents.in/banners/2eeb14032b1e938973c980bd078bd965-rimg-w711-h265-gmir.jpg">
     </p-header>
     <div>
-
+      <p>Nombre:{{entrenador.nombres}}</p>
+      <p>Apellidos: {{entrenador.apellidos}}</p>
+      <p>Fecha Nacimiento: {{entrenador.fechaNacimiento}}</p>
+      <p>Numero de Medallas: {{entrenador.numeroMedallas}}</p>
+      <p>Campeon actual: {{entrenador.campeonActual}}</p>
     </div>
     <p-footer>
-        <button pButton type="button" label="Save" icon="fa-check"></button>
-        <button pButton type="button" label="Cancel" icon="fa-close" class="ui-button-secondary"></button>
     </p-footer>
-</p-card>
+  </p-card>

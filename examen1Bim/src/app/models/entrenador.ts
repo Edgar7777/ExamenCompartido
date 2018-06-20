@@ -4,7 +4,7 @@ export class Entrenador{
   nombres: string;
   apellidos : string;
   fechaNacimiento : string;
-  numeroMedallas : int;
+  numeroMedallas : number;
   campeonActual : boolean;
   imagenes : string;
   pokemons : Pokemon[] = [];

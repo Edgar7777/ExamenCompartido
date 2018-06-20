@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import {Pokemon} from "../models/pokemon";
 
 @Component({
   selector: 'app-tabla',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablaComponent implements OnInit {
 
-  constructor() { }
+  @Input() pokemons : Pokemon[];
 
   ngOnInit() {
   }

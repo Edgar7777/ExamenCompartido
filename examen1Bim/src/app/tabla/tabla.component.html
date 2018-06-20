@@ -1,27 +1,28 @@
+<!-- {{pokemons | json}} -->
 <div align="center">
   <h1>BANCO DE POKÉMON</h1>
 </div>
-<p-table [value]="cars">
+<p-table [value]="pokemons">
     <ng-template pTemplate="header">
         <tr>
             <th>Numero</th>
             <th>Nombre</th>
-            <th>Poder1</th>
-            <th>Poder2</th>
-            <th>FechaCaptura</th>
+            <th>Poder 1</th>
+            <th>Poder 2</th>
+            <th>Fecha Captura</th>
             <th>Nivel</th>
             <th>Entrenador</th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-car>
+    <ng-template pTemplate="body" let-pokemon>
         <tr>
-            <td>{{car.Numero}}</td>
-            <td>{{car.Nombre}}</td>
-            <td>{{car.Poder1}}</td>
-            <td>{{car.Poder2}}</td>
-            <td>{{car.FechaCaptura}}</td>
-            <td>{{car.Nivel}}</td>
-            <td>{{car.Entrenador}}</td>
+            <td>{{pokemon.numeroPokemon}}</td>
+            <td>{{pokemon.nombrePokemon}}</td>
+            <td>{{pokemon.poderEspecialUno}}</td>
+            <td>{{pokemon.poderEspecialDos}}</td>
+            <td>{{pokemon.fechaCaptura}}</td>
+            <td>{{pokemon.nivel}}</td>
+            <td>{{pokemon.entrenadorId}}</td>
         </tr>
     </ng-template>
 </p-table>

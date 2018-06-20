@@ -1,35 +1,17 @@
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <img [src]="images[0]" alt="Random first slide">
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[1]" alt="Random second slide">
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[2]" alt="Random third slide">
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
-<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-50" src="http://www.alarmasparacasa.com.mx/wp-content/uploads/2017/07/alarmas-300x224.png" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="https://i.ytimg.com/vi/fzeHBf0j-7E/maxresdefault.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="http://4.bp.blogspot.com/-61yL0V2jp6c/U8ij2jZLGeI/AAAAAAAABzQ/M0B3XwEaDHA/s1600/laserr.jpg" alt="Third slide">
-    </div>
-  </div>
-</div> -->
+<div *ngIf="listaEntrenadores?.length>0">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let entrenador of listaEntrenadores">
+      <img width="600" [src]="entrenador.imagenes" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>{{entrenador?.nombres}}</h3>
+        <p>{{entrenador?.apellidos}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+<div *ngIf="!listaEntrenadores?.length>0">
+  <img width="500" [src]=imagen/>
+  
+
+</div>

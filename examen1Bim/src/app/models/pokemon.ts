@@ -1,9 +1,10 @@
-export class Pokemon{
+export class Pokemon
+{
   numeroPokemon : number;
-  nombrePokemon : string;
-  poderEspecialUno :string;
-  poderEspecialDos : string;
-  fechaCaptura : string;
+  nombrePokemon : String;
+  poderEspecialUno : String;
+  poderEspecialDos : String;
+  fechaCaptura : String;
   nivel : number;
   entrenadorId : number;
 }
